@@ -24,7 +24,7 @@ class Car
 
   public static function getCount()
   {
-
+    echo "<h2>self::$countCar<h2/>";
   }
 }
 ?>
