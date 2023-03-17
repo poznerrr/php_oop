@@ -22,6 +22,7 @@ echo "<h3> Об авто </h3>
 Скорость: {$car1->speed}  км/ч <br>
 ";
 
+
 function debug($data) {
   echo '<pre>'.print_r($data, 1).'</pre>';
 }
