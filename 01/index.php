@@ -19,7 +19,9 @@ echo "<h3> Об авто </h3>
 Скорость: {$car1->speed}  км/ч <br>
 ";
 
-$file = new File (__DIR__.'/file.txt');
+echo "Создано машин на производтсве: ".Car::getCount();
+
+$file = new File(__DIR__.'/file.txt');
 $file->write("Я помню чудное мгновение");
 $file->write("Передо мной явилась ты");
 
