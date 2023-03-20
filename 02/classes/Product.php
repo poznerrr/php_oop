@@ -1,5 +1,5 @@
 <?php
-class Product
+abstract class Product
 {
   public $name;
   public $price;

@@ -1,5 +1,7 @@
 <?php
-class NotebookProduct extends Product
+require_once 'I3D.php';
+
+class NotebookProduct extends Product implements I3D
 {
 
   public $cpu;
@@ -20,6 +22,10 @@ class NotebookProduct extends Product
     $out = parent::getProduct();
     $out.="Процессор: {$this->cpu}<br>";
     return $out;
+  }
+
+  public function testInterface() {
+    return self::TEST2;
   }
 
 }
