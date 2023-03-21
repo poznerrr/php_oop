@@ -1,9 +1,11 @@
 <?php
 require_once 'I3D.php';
+require_once './traits/TColor.php';
 
 class NotebookProduct extends Product implements I3D
 {
 
+  use TColor;
   public $cpu;
 
   public function __construct($name, $price, $cpu)
